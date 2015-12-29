@@ -1,0 +1,34 @@
+ {
+    "wake": {
+        "AMY_AND_RORY": "Amy and Rory open your eyes and look lovingly at each other.",
+        "ANGEL": "Weeping Angel open your eyes.",
+        "CYBERMAN": "Cyberman (or maybe Cybermen) open your eyes.",
+        "DOCTOR": "Doctor open your eyes",
+        "RIVER": "River Song open your eyes.",
+        "TARDIS": "TARDIS open your eyes.",
+        "DALEK": "Dalek open your eyes.",
+        "K9": "K9 open your eyes.",
+        "SONTARAN": "Sontarans open your eyes.",
+        "SILENCE": "Silence open your eyes."
+    },
+    "gettarget": {
+        "ANGEL": "Pick someone to consume.",
+        "CYBERMAN": "Pick someone to delete.",
+        "DOCTOR": "Doctor pick someone to protect.",
+        "RIVER": "Who would you like to kiss?",
+        "TARDIS": "Would you like to use your once per game ability and save someone? Who?",
+        "DALEK": "Pick someone to exterminate.",
+        "K9": "Pick a target to scan.",
+        "SONTARAN": "Pick a target to kill.",
+        "SILENCE": "Pick a target to kill.",
+        "LYNCH": "Everyone vote for someone to kill."
+    },
+     "evilwins": {
+         "ANGEL": "The weeping angel has won.",
+         "CYBERMAN": "The Cybermen have upgraded everyone.",
+         "DALEK": "The Daleks have exterminated everyone.",
+         "SONTARAN": "The Sontaran Empire is victorious.",
+         "SILENCE": "Silence will fall.",
+         "NOONE": "No one wins.  Everyone is dead!"
+     }
+}

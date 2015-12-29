@@ -1,0 +1,19 @@
+{
+  "name": "Badwolf",
+  "version": "1.2.1",
+  "dependencies": {
+    "gulp-inline-source": "^2.1.0",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "browserify": "^4.2.0",
+    "chai": "^1.9.1",
+    "gulp": "^3.8.5",
+    "gulp-replace": "^0.3.0",
+    "mocha": "^1.18.2",
+    "mocha-sinon": "^1.1.2",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}

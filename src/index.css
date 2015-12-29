@@ -1,0 +1,33 @@
+#messagebox
+{
+    position: absolute;
+    overflow: auto;
+    border-color: black;
+    border-width: 1px;
+}
+
+.players {
+}
+
+.isDead {
+    background-color: #FF9999;
+}
+
+.target-sel {
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    width: 390px;
+}
+
+.btn
+{
+    height: 44px;
+    min-width: 44px;
+    margin: 3px;
+}
+
+.alarm-warning
+{
+    color: red;
+}

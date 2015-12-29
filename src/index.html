@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="Badwolf">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="index.css" rel="stylesheet" type="text/css" inline>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="badwolf-browser-bundle.js" inline></script>
+</head>
+<body ng-controller="BadwolfController" ng-keypress="keypress($event)">
+<div>
+    <button class="btn" ng-click="mode='players'">Players</button>
+    <button class="btn" ng-click="mode='messages'">Messages</button>
+    <button class="btn" ng-click="mode='log'">Log</button>
+    Badwolf v1.2.2
+</div>
+<div ng-switch="mode">
+    <div id="messagebox" ng-switch-when="messages">
+        <div ng-repeat="message in messages track by $index">{{message}}</div>
+        <div ng-repeat="target in targets">
+            <button class="btn"  ng-click="chooseTarget(target.index)">{{(target.index + 1)}}-{{target.name}}</button>
+        </div>
+    </div>
+    <div ng-switch-when="log">
+        <div ng-repeat="log in logs track by $index">{{log}}</div>
+    </div>
+    <div ng-switch-default>
+        <div ng-repeat="player in players" ng-class="{isDead:player.isDead}" class="players">
+            {{$index + 1}}
+            <input type="text" ng-model="player.name">
+            <select ng-model="player.characterType" ng-options="character.id as character.name for character in characters | orderBy:'name'"></select>
+            <select ng-model="player.code" ng-options="code for code in codes | orderBy:code"></select>
+            <button class="btn" type="button" ng-click="removePlayer(player)">X</button>
+        </div>
+        <button class="btn" type="button" ng-click="addPlayer()">Add Player</button>
+        <button class="btn" type=button" ng-click="start()">Start Game</button>
+    </div>
+</div>
+</body>
+</html>
