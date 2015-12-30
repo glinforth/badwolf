@@ -4,6 +4,7 @@
 
 var gulp = require('gulp');
 var browserify = require('browserify');
+var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var replace = require('gulp-replace');
 var fs = require('fs');
@@ -16,9 +17,10 @@ function inlineFiles() {
 }
 
 gulp.task('browserify', function() {
-    return browserify('./src/badwolf-browser.js')
+    return browserify('./src/index.js', {debug:true})
+        .transform(babelify, {presets: ["es2015", "react"]})
         .bundle()
-        .pipe(source('badwolf-browser-bundle.js'))
+        .pipe(source('index.js'))
         .pipe(gulp.dest('./tmp'))
 });
 

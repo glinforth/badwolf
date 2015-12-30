@@ -18,7 +18,6 @@ module.exports = {
                     return !a.isDead;
                 }) && p.isDead;
             });
-            targets.push(-1);
             g.emit('gettarget', NAME, targets);
             return false;
         }

@@ -2,7 +2,7 @@
  * Created by glinforth on 02/03/14.
  */
 
-var Game = require('./game');
+var Game = require('./engine/game');
 var _ = require('underscore');
 
 var players = [

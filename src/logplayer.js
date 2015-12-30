@@ -4,7 +4,7 @@
 
 var fs = require('fs'),
     _ = require('underscore'),
-    Game = require('./game'),
+    Game = require('./engine/game'),
     readline = require('readline');
 
 var rd = readline.createInterface({

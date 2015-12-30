@@ -31,3 +31,40 @@
 {
     color: red;
 }
+
+.player-status-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+.isDead {
+    background: #ff9999;
+}
+
+.messages {
+    position: absolute;
+    bottom: 100px;
+    top: 50px;
+    left: 0;
+    width: 50%;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+.messages-item-enter {
+    color: red;
+}
+
+.messages-item-enter.messages-item-enter-active {
+    color: black;
+    transition: color 1500ms ease-in;
+}
+
+.target-select {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%
+}
